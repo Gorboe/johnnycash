@@ -1,0 +1,210 @@
+body {
+    margin: 0px;
+}
+
+.container { /*gjør at bredden alltid er like lang som siden*/
+    width: 100%;
+    margin: auto;
+    background-color: darkslategray;
+    /*border: 3px solid red;*/
+}
+
+/*NAVIGATION MENY*/
+.menu-container {
+    height:54px;
+    background-color: darkcyan !important; /*Setter bakgrunnsfargen til menu*/
+    border: 1px solid black;
+    position: fixed;
+    width: 100%;
+}
+
+ul.nav-menu > li { /*denne plaserer alt mot venstre*/
+    float: left; 
+}
+
+ul.nav-menu {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    height: 54px;
+    vertical-align: middle;
+}
+
+ul.nav-menu > li > a {
+    display: block;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; /*black shadow on the letters*/
+    text-align: center;
+    padding: 16px 16px 16px 16px; /* top right bottom left */
+    text-decoration: none;
+}
+
+ul.nav-menu > li > a:hover { /*when you hover over with your mouse, changes colour*/
+    color: lightslategray;
+}
+
+/*SLUTT NAVIGATION MENY*/
+
+/*CASH IS KING BILDE*/
+.bilde {
+    max-width: 100%;
+    height: auto;
+    /*border: 3px solid green;*/
+}
+/*SLUTT CASH IS KING BILDE*/
+
+/*START BIO*/
+h1 {
+    font-size: 50px;
+    text-align: center;
+    background-color: darkcyan;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.bigbox {
+    display: inline-flex;
+    margin-bottom: 5px;
+    /*border: 3px solid orange;*/
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 25px;
+    Word-spacing: 0.1em;
+    line-height: 1.2em;
+    margin: 10px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    /*border: 3px solid brown;*/
+}
+
+.biobilde {
+    max-width: 100%;
+    min-width: 50%;
+    height: auto;
+}
+
+.link {
+    letter-spacing: 0.08em;
+    color: royalblue;
+    }
+
+.link:hover {
+    color: cornflowerblue;
+}
+/*SLUTT BIO*/
+
+/*START GREATEST HTIS*/
+
+.videobox {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.videos {
+    width: 420px; 
+    height: 345px;
+}
+
+/*SLUTT GREATEST HITS*/
+
+/*SPOTIFY ITUNES*/
+
+.musicpic {
+    text-align: center;
+    margin-top: -40px;
+}
+
+.musicpic :hover {
+    opacity: 0.7;
+}
+
+.itunespic {
+    height: 120px;
+    width: 300px;
+    margin-bottom: 7px;
+}
+
+.spotifypic {
+    height: 135px;
+    width: 310px;
+}
+
+/*SLUTT SPOTIFY ITUNES*/ 
+
+/*MEDIA*/
+@media all and (min-width: 1250px) and (max-width: 1500px){
+    .text {
+        font-size: 25px;
+    }
+    .biobilde {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media all and (min-width: 1000px) and (max-width: 1249px){
+    .text {
+        font-size: 25px;
+    }
+    .biobilde {
+        width: 100%;
+        height: auto;
+    }
+    .bigbox {
+        display: block;
+    }
+}
+
+@media all and (min-width: 750px) and (max-width: 999px){
+    .bigbox {
+        display: block;
+    }
+    .text {
+        font-size: 30px;
+    }
+    .biobilde {
+        width: 100%;
+        height: auto;
+    }
+    .link {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 749px){
+    .videos {
+        width: 100%;
+        height: auto;
+    }
+    .bigbox {
+        display: block;
+    }
+    .text {
+        font-size: 20px;
+    }
+    .biobilde {
+        width: 100%;
+        height: auto;
+    }
+    .link {
+        font-size: 10px;
+        letter-spacing: 0.05em; 
+    }
+    .mbilde {
+        max-width: 100%;
+        height: auto;
+    }
+    .bilde {
+        margin-top: 50px;
+    }
+}
